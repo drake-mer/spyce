@@ -1,0 +1,41 @@
+name:                spyce
+version:             0.1.0.0
+github:              "elijahbal/spyce"
+license:             BSD3
+author:              "David Kremer"
+maintainer:          "courrier@david-kremer.fr"
+copyright:           "2018 David Kremer"
+
+extra-source-files:
+- README.md
+- ChangeLog.md
+
+# Metadata used when publishing your package
+synopsis:            Spyce: A Haskell Implementation of Python Standard Library
+category:            Library
+
+# To avoid duplicated efforts in documentation and dealing with the
+# complications of embedding Haddock markup inside cabal files, it is
+# common to point users to the README.md file.
+description:         Please see the README on GitHub at <https://github.com/githubuser/spyce#readme>
+
+dependencies:
+- base >= 4.7 && < 5
+
+library:
+  source-dirs: src
+  dependencies:
+  - random
+
+tests:
+  spyce-test:
+    main:                Spec.hs
+    source-dirs:         test
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    dependencies:
+    - spyce
+    - hspec
+    - random
