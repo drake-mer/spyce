@@ -3,15 +3,13 @@
 
 ## Motivation
 
-Let's admit it: the Python standard library is very nice.
+The Python standard library is very nice.
+
 It contains (almost) everything you could dream of, whose
 interfaces are varying from average to excellent.
 
-Also, Python is very much used as a primary language to 
-write various scripts and such things.
-
-So this library could help people switching from a language
-to another to have a more smooth transition.
+Also, Python is very much used as a starting language for
+beginners.
 
 The interface mapping will not be one to one, and this 
 library is also conceived as a training ground for writing
@@ -20,4 +18,4 @@ the implementations.
 
 # TODO
 
-Everything :)
+Submit a pull request to improve this list.
